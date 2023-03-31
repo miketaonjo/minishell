@@ -32,7 +32,7 @@ Minishell is a miniature shell program based on Bash. Minishell supports:
 <code>ctrl-c</code> displays a new prompt line.<br>
 <code>ctrl-d</code> exits minishell<br>
 <code>ctrl-\/</code> does nothing<br>
-However, Minishell does not support <code>\/</code>, <code>;</code>, <code>&&</code>, <code>||</code., or wildcards.
+However, Minishell does not support <code>\/</code>, <code>;</code>, <code>&&</code>, <code>||</code>, or wildcards.
 
 ## Usage
 
