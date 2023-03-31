@@ -31,7 +31,7 @@ Minishell is a miniature shell program based on Bash. Minishell supports:
 - User keyboard signals:<br>
 <code>ctrl-c</code> displays a new prompt line.<br>
 <code>ctrl-d</code> exits minishell<br>
-<code>ctrl-\</code> does nothing<br>
+<code>ctrl-/\/</code> does nothing<br>
 However, Minishell does not support \, ;, &&, ||, or wildcards.
 
 ## Usage
