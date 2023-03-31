@@ -26,7 +26,7 @@ Minishell is a miniature shell program based on Bash. Minishell supports:
 <code>>></code> redirects output in append mode<br>
 <code><</code> redirects input<br>
 <code><< DELIMITER</code> displays a new prompt, reads user input until reaching <code>DELIMITER</code>, redirects user input to command input (does not update history)<br>
-- Environment variables (i.e. <code>$USER or <code>$VAR) that expand to their values.<br>
+- Environment variables (i.e. <code>$USER</code> or <code>$VAR</code>) that expand to their values.<br>
 <code>$?</code> expands to the exit status of the most recently executed foreground pipeline.<br>
 - User keyboard signals:<br>
 <code>ctrl-c</code> displays a new prompt line.<br>
