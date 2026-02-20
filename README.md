@@ -1,12 +1,21 @@
-# Project name : minishell
+# Minishell – Unix Shell Implementation in C
 
-For this project, the assignment is : 
+Minishell is a Unix shell implementation written in C as part of the 42 School curriculum.
+It reproduces core Bash behaviors including command execution, pipelines, redirections, environment variable expansion, built-in commands, and signal handling.
+The project focuses on process management, file descriptor manipulation, parsing logic, and system-level programming concepts.
 
-This project is about creating a simple shell. Yes, your own little bash. You will learn a lot about processes and file descriptors.
+Overview
 
-It is a team project where you will create a basic shell program in C. It implements redirections and pipes, as well as environment variable expansions and the cd, echo, env, exit, export, pwd and unset builtin commands.
+- Language: C
+- Architecture: Modular parsing and execution pipeline
+- Process Handling: fork, execve, wait
+- Inter-process Communication: pipes
+- File Descriptor Management: dup2, redirections
+- Environment Handling: variable expansion and export management
+- Signal Handling: ctrl-c, ctrl-d, ctrl-\
+- Focus: Low-level Unix systems programming
 
-Minishell is a miniature shell program based on Bash. Minishell supports:
+## Supported features
 
 - Prompt display<br>
 - Command history (up and down arrows)<br>
@@ -32,15 +41,23 @@ Minishell is a miniature shell program based on Bash. Minishell supports:
 <code>ctrl-c</code> displays a new prompt line.<br>
 <code>ctrl-d</code> exits minishell<br>
 <code>ctrl-\/</code> does nothing<br>
+
 However, Minishell does not support <code>\/</code>, <code>;</code>, <code>&&</code>, <code>||</code>, or wildcards.
 
+
+## Installation
+```bash
+git clone <repository_url>
+cd minishell
+make
+```
+
 ## Usage
+```bash
+./minishell (anything from listed above)
+```
 
-In order to compile :
-<code>make</code>
-
-Execution :
-<code>./minishell (anything from listed above)</code>
-
-Exemple = 
-<code>./minishell cat Makefile | grep o > out</code>
+## Exemple
+```bash
+./minishell cat Makefile | grep o > out
+```
